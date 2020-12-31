@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
@@ -12,14 +12,22 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/wg.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 860px; height: 500px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Nemesis Fantasy Battles</div>
+  <body style="background-color:black;">
+      <ul>
+          <li style="display:inline-block; position: absolute; top: 0; left: 25px;">
+              <A href="index.html"><H1 color="red" style="font-size:200%; text-align:center;">Home</H1></A>
+          </li>
+          <li style="display:inline-block; position: absolute; top: 50px; left: 25px;">
+              <a href="unitstats.html"><h1 color="red" style="font-size:200%; text-align:center;">Unit Stats</h1></a>
+          </li>
+      </ul>
+      <div class="webgl-content">
+          <div id="unityContainer" style="width: 860px; height: 500px"></div>
+          <div class="footer">
+              <div class="webgl-logo"></div>
+              <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+              <div class="title">Nemesis Fantasy Battles</div>
+          </div>
       </div>
-    </div>
   </body>
 </html>
