@@ -1,4 +1,26 @@
 ﻿<!DOCTYPE html>
+<style>
+    body {
+        width: 100%;
+        margin: auto;
+    }
+
+    #div {
+        display: block;
+    }
+
+    #wrapper {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    #content {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+</style>
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
@@ -13,38 +35,47 @@
     </script>
 </head>
 <body style="background-color:black;">
-    <div id="Wrapper">
-    <center>
-        <a href="index.html"><img src="banner.png" style="width:500px;height:70px;"></a>
-    </center>
-    <ul>
-        <li style="display:inline-block; position: absolute; top: 200px; left: 50px;">
-            <a href="index.html"><img src="home.png" style="width:100px;height:50px;"></a>
-        </li>
-        <li style="display:inline-block; position: absolute; top: 250px; left: 50px;">
-            <A href="unitstats.html"><img src="unitstats.png" style="width:100px;height:50px;"></A>
-        </li>
-        <li style="display:inline-block; position: absolute; top: 300px; left: 50px;">
-            <a href=""><img src="account.png" style="width:100px;height:50px;"></a>
-        </li>
-        <li style="display:inline-block; position: absolute; top: 350px; left: 50px;">
-            <a href=""><img src="forums.png" style="width:100px;height:50px;"></a>
-        </li>
-        <li style="display:inline-block; position: absolute; top: 400px; left: 50px;">
-            <a href=""><img src="Support.png" style="width:100px;height:50px;"></a>
-        </li>
-        <li style="display:inline-block; position: absolute; top: 450px; left: 50px;">
-            <a href="https://discord.gg/WuUCZNag"><img src="Discord.png" style="width:100px;height:50px;"></a>
-        </li>
-    </ul>
-
-    <div class="webgl-content">
-        <div id="unityContainer" style="width: 860px; height: 500px"></div>
-        <div class="footer">
-            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-            <div class="title">Nemesis Fantasy Battles</div>
-        </div>
-    </div>
-        </div>
+    <div id="wrapper">
+        <div id="content">
+            <div id="wrapper">
+                <div id="content">
+                    <center>
+                        <a href="index.html"><img src="banner.png" style="width:500px;height:70px;"></a>
+                    </center>
+                    <ul>
+                        <li style="display:inline-block; position: absolute; top: 200px; left: 50px;">
+                            <a href="index.html"><img src="home.png" style="width:100px;height:50px;"></a>
+                        </li>
+                        <li style="display:inline-block; position: absolute; top: 250px; left: 50px;">
+                            <A href="unitstats.html"><img src="unitstats.png" style="width:100px;height:50px;"></A>
+                        </li>
+                        <li style="display:inline-block; position: absolute; top: 300px; left: 50px;">
+                            <a href=""><img src="account.png" style="width:100px;height:50px;"></a>
+                        </li>
+                        <li style="display:inline-block; position: absolute; top: 350px; left: 50px;">
+                            <a href="https://nemesisbattles.freeforums.net/"><img src="forums.png" style="width:100px;height:50px;"></a>
+                        </li>
+                        <li style="display:inline-block; position: absolute; top: 400px; left: 50px;">
+                            <a href=""><img src="Support.png" style="width:100px;height:50px;"></a>
+                        </li>
+                        <li style="display:inline-block; position: absolute; top: 450px; left: 50px;">
+                            <a href="https://discord.gg/WuUCZNag"><img src="Discord.png" style="width:100px;height:50px;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="wrapper">
+                <div id="content">
+                    <div class="webgl-content">
+                        <div id="unityContainer" style="width: 860px; height: 500px"></div>
+                        <div class="footer">
+                            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                            <div class="title">Nemesis Fantasy Battles</div>
+                        </div>
+                    </div>
+                    </div>
+</div>
+                </div>
+            </div>
 </body>
 </html>
