@@ -76,6 +76,15 @@
 			-ms-interpolation-mode: nearest-neighbor;
 		}
 	</style>
+
+                <script>
+                    var unity_instance;
+
+                    document.addEventListener('DOMContentLoaded', () => {
+                      unity_instance = gameInstance;
+                    });
+                </script>
+                    
 </head>
 
 <body onload="onResize();">
