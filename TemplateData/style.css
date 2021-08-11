@@ -1,9 +1,16 @@
-.webgl-content * {border: 0; margin: 0; padding: 0; overflow: hidden;}
-.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);overflow: hidden;}
+.webgl-content * {border: 0; margin: 0; padding: 0; overflow: hidden; left: 0;}
+   canvas {
+            position: absolute;
+        }
+        canvas, .webgl-content, #gameContainer {
+            width: 100% !important;
+            height: 100%!important;
+        }
+.webgl-content {position: absolute; overflow: hidden;}
 .webgl-content .overlay{    
     background-color: #000;
     width: 100%;
-    height: 800px;
+    height: 100%;
     z-index: 7;
     position: absolute;
     top: 0;}
@@ -38,10 +45,10 @@ body {
   text-align: center;
     position: absolute;
     top: 50%;
-    right: 50%;
-    margin-top: -50px;
+    left: 50%;
+    margin-top: 20px;
     width: 200px;
-    margin-right: -100px;
+    margin-left: -100px;
 	z-index: 8;
 }
 .counter p {
@@ -114,6 +121,8 @@ body .vertical-centered-box .content {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+   margin: 0;
+  padding: 0;
 }
 
 .loader-circle {
