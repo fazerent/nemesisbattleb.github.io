@@ -9,13 +9,13 @@ function UnityProgress(gameInstance, progress) {
 
     if (progress == "complete") {
         gameInstance.logo.style.display = "none";
-        $('#overlay').delay(1000).animate({
-            "margin-left": '-=1700'
+        $('#overlay').delay(1700).animate({
+            "margin-left": '-=4000'
         }, 'slow').fadeOut();
         $('#ProgressLine').delay(200).animate({
             "margin-top": '-=2000'
         }, 'slow').fadeOut();
-        $('#loadingInfo').delay(200).animate({
+        $('#loadingInfo').delay(300).animate({
             "margin-top": '-=2000'
         }, 'slow').fadeOut();
         $('#progressC').delay(200).animate({
