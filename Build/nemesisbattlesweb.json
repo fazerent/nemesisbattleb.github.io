@@ -9,7 +9,7 @@
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "backgroundUrl": "nemesisbattlesweb.jpg",
 "splashScreenStyle": "Dark",
-"backgroundColor": "#FFFFFF",
+"backgroundColor": "#FFFF00",
 "cacheControl": {"default": "must-revalidate"},
 "developmentBuild": false,
 "multithreading": false,
