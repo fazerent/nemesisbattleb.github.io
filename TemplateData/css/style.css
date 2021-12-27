@@ -91,7 +91,7 @@ body {
 #fullBar{
 	background: url("../img/progressFull.png") no-repeat right;
 	float: left; 
-	width: 40%; 
+	width: 41%; 
 	height: 100%; 
 	display: inline-block;
 }
