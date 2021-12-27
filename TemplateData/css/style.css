@@ -8,7 +8,7 @@ body {
 	font-style: normal;
 	font-family: Gotharctica, Myriad,"Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-shadow: -1.5px -.8px #7a0000;
-	-webkit-text-stroke: 1px black;
+	-webkit-text-stroke: .8px black;
 	letter-spacing: 8px;
 	background-color: #f0f0f1;
 }
@@ -55,13 +55,24 @@ body {
 	text-align: center;
 }
 
+.subsubtitle {
+	color: white;
+	//-webkit-text-stroke: .6px black;
+	font-size: 3vh;
+	padding-bottom: 3vh;
+	padding-top: 3vh;
+	display: block;
+	height: 15vh;
+	width: 40vw;
+	margin: auto;
+	text-align: center;
+}
 .logo{
 	height:25vh;
 	width:auto;
 	display: block;
 	margin: auto;
 	margin-top:2vh;
-	margin-right: 86vh;
 }
 
 #loadingBlock,#errorBrowserBlock{
@@ -87,21 +98,23 @@ body {
 
 #progressBar,#warningBrowserBlock,#warningMobileBlock,#errorContent{
 	height:25vh;
-	width:40vw;
+	width:45vw;
 	margin:auto;
 	text-align: center;
 }
 
-#progressBar{
-	height:8vh;
-	color:white;
-	font-size:4vh;
+#progressBar {
+	height: 8vh;
+	color: white;
+	font-size: 2vh;
+	-webkit-text-stroke: .4px black;
 }
 
 #warningBrowserBlock, #warningMobileBlock, #errorContent {
 	margin-top: 15vh;
 	color: white;
 	font-size: 2.3vh;
+	-webkit-text-stroke: .4px black;
 }
 
 .browserIcons{
