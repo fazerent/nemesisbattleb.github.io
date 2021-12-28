@@ -1,6 +1,6 @@
 body {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -9,10 +9,22 @@ body {
 	font-family: Gotharctica, Myriad,"Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-shadow: -1.5px -.8px #7a0000;
 	-webkit-text-stroke: .8px black;
-	letter-spacing: .8vh;
+	letter-spacing: 8px;
 	background-color: #f0f0f1;
-	aspect-ratio: auto;
-	overflow: visible;
+}
+.scaled-wrapper {
+  position: absolute;
+  width: 100vw; height: 100vh;
+  outline: 1px solid red;
+  z-index: 1;
+}
+.scaled-content {
+  box-sizing: border-box;
+  width: 1920px; height: 1080px;
+  display: inline-block;
+  transform-origin: 0 0;
+  background-color: #ffd0d0;
+  z-index: -1;
 }
 
 .webgl-content,#loadingBlock,#errorBrowserBlock{
@@ -47,7 +59,7 @@ body {
 .subtitle {
 	color: white;
 	//-webkit-text-stroke: .6px black;
-	font-size: 5vh;
+	font-size: 25px;
 	padding-bottom: 3vh;
 	padding-top: 3vh;
 	display: block;
@@ -60,7 +72,7 @@ body {
 .subsubtitle {
 	color: white;
 	//-webkit-text-stroke: .6px black;
-	font-size: 3vh;
+	font-size: 10px;
 	padding-bottom: 3vh;
 	padding-top: 3vh;
 	display: block;
@@ -75,15 +87,6 @@ body {
 	display: block;
 	margin: auto;
 	margin-top:2vh;
-}
-
-.keepRatio {
-	width: 100%;
-	padding-bottom: 56.25%;
-	position: absolute;
-	border: 2px dotted blue;
-	//top: 50%;
-	//transform: translateY(-50%);
 }
 
 #loadingBlock,#errorBrowserBlock{
