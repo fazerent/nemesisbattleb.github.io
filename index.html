@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
 	<title>Nemesis Battles Online</title>
 	<script src="Build/UnityLoader.js"></script>
 	<script>
@@ -47,7 +48,7 @@
 		html,
 		body {
 			background: #000;
-			background: ;
+			background:;
 			width: 100%;
 			height: 100%;
 			overflow: visible;
@@ -60,34 +61,35 @@
 			position: absolute;
 		}
 
-		div#gameContainer canvas {
-			position: absolute;
-		}
+			div#gameContainer canvas {
+				position: absolute;
+			}
 
-		div#gameContainer[data-pixelated='true'] canvas {
-			image-rendering: optimizeSpeed;
-			image-rendering: -webkit-crisp-edges;
-			image-rendering: -moz-crisp-edges;
-			image-rendering: -o-crisp-edges;
-			image-rendering: crisp-edges;
-			image-rendering: -webkit-optimize-contrast;
-			image-rendering: optimize-contrast;
-			image-rendering: pixelated;
-			-ms-interpolation-mode: nearest-neighbor;
-		}
+			div#gameContainer[data-pixelated='true'] canvas {
+				image-rendering: optimizeSpeed;
+				image-rendering: -webkit-crisp-edges;
+				image-rendering: -moz-crisp-edges;
+				image-rendering: -o-crisp-edges;
+				image-rendering: crisp-edges;
+				image-rendering: -webkit-optimize-contrast;
+				image-rendering: optimize-contrast;
+				image-rendering: pixelated;
+				-ms-interpolation-mode: nearest-neighbor;
+			}
 	</style>
 
-                <script>
-                    var unity_instance;
+	<script>
+		var unity_instance;
 
-                    document.addEventListener('DOMContentLoaded', () => {
-                      unity_instance = gameInstance;
-                    });
-                </script>
-                    
+		document.addEventListener('DOMContentLoaded', () => {
+			unity_instance = gameInstance;
+		});
+	</script>
+
 </head>
 
 <body onload="onResize();">
+	<img class="logo" src="background.png" height="100%" , width="100%">
 	<div id="gameContainer" data-pixelated=""></div>
 </body>
 
