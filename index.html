@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Nemesis Battles Online</title>
 	<link rel="shortcut icon" href="favicon.ico">
+	<title>Nemesis Battles Online</title>
 	<script src="Build/UnityLoader.js"></script>
 	<script>
 		var gameInstance = UnityLoader.instantiate("gameContainer", "Build/nemesisbattlesweb.json");
@@ -15,6 +15,7 @@
 		} catch (e) {
 			scaleToFit = true;
 		}
+
 		function onResize() {
 			var canvas = gameInstance.Module.canvas;
 			var container = gameInstance.container;
@@ -53,7 +54,6 @@
 			overflow: visible;
 			padding: 0;
 			margin: 0;
-			position: absolute;
 		}
 
 		div#gameContainer {
@@ -89,12 +89,8 @@
 </head>
 
 <body onload="onResize();">
-	<img class="logo" src="background.png" height="100%", width="100%">
+	<img class="logo" src="background.png" height="100%" , width="100%">
 	<div id="gameContainer" data-pixelated=""></div>
-	<div id="loader">
-		<div class="spinner"></div>
-		<div class="progress"><div class="full"></div></div>
-	</div>
 </body>
 
 </html>
