@@ -26,15 +26,15 @@
 				w = window.innerWidth;
 				h = window.innerHeight;
 
-				var r = 1080 / 1920;
+				var r = % UNITY_HEIGHT % / 1920;
 
 				if (w * r > window.innerHeight) {
 					w = Math.min(w, Math.ceil(h / r));
 				}
 				h = Math.floor(w * r);
 			} else {
-				w = 1920;
-				h = 1080;
+				w = % UNITY_WIDTH %;
+				h = % UNITY_HEIGHT %;
 			}
 
 			container.style.width = canvas.style.width = w + "px";
@@ -48,7 +48,7 @@
 		html,
 		body {
 			background: #000;
-			background:;
+			background: ;
 			width: 100%;
 			height: 100%;
 			overflow: visible;
@@ -78,18 +78,18 @@
 			}
 	</style>
 
-	<script>
-		var unity_instance;
+                <script>
+                    var unity_instance;
 
-		document.addEventListener('DOMContentLoaded', () => {
-			unity_instance = gameInstance;
-		});
-	</script>
-
+                    document.addEventListener('DOMContentLoaded', () => {
+                      unity_instance = gameInstance;
+                    });
+                </script>
+                    
 </head>
 
 <body onload="onResize();">
-	<img class="logo" src="background.png" height="100%" , width="100%">
+	<img class="logo" src="background.png" min-height="100%" , min-width="100%">
 	<div id="gameContainer" data-pixelated=""></div>
 </body>
 
