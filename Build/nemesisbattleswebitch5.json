@@ -1,0 +1,17 @@
+{
+"companyName": "Mid-Realm Entertainment",
+"productName": "Nemesis Battles Online",
+"productVersion": "0.0.1",
+"dataUrl": "nemesisbattleswebitch5.data.unityweb",
+"wasmCodeUrl": "nemesisbattleswebitch5.wasm.code.unityweb",
+"wasmFrameworkUrl": "nemesisbattleswebitch5.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "nemesisbattleswebitch5.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.21f1"
+}
